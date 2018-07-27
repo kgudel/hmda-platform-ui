@@ -74,11 +74,134 @@ export default class Institutions extends Component {
       <main id="main-content" className="usa-grid Institutions">
         {error ? <ErrorWarning error={error} /> : null}
         <div className="usa-width-one-whole">
-          {filingPeriod ? (
-            <InstitutionsHeader filingPeriod={filingPeriod} />
-          ) : null}
+          <h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Accepted
+          </span>
 
-          {_whatToRender(this.props)}
+          <p style={{ display: 'inline' }}>HMDA filing process complete</p>
+          <div
+            style={{
+              border: '1px solid #ddd',
+              borderRadius: '2px',
+              marginTop: '20px'
+            }}
+          >
+            <p
+              style={{
+                borderBottom: '1px solid #ddd',
+                backgroundColor: '#f5f5f5',
+                padding: '15px',
+                margin: '0'
+              }}
+            >
+              <strong>Andrew Wolfe</strong> submitted 2 hours ago
+            </p>
+            <p style={{ padding: '15px', margin: '0' }}>
+              This completes your HMDA filing process for this year. If you need
+              to upload a new HMDA file, the previously completed filing will
+              not be overridden until all edits have been cleared and verified,
+              and the new file has been submitted.
+            </p>
+          </div>
+          <div style={{ padding: '0 15px', borderBottom: '4px solid #ddd' }}>
+            <ul
+              style={{
+                paddingLeft: '14px',
+                borderLeft: '2px solid #ddd',
+                marginLeft: '10px',
+                marginTop: '0',
+                marginBottom: '0'
+              }}
+            >
+              <li style={{ paddingTop: '30px' }}>
+                <strong>Bill Gates</strong> verified macro edits 1 day ago
+              </li>
+              <li style={{ marginTop: '20px' }}>
+                <strong>Steve Jobs</strong> verified quality edits 2 days ago
+              </li>
+              <li style={{ marginTop: '20px' }}>
+                <strong>Steve Jobs</strong> uploaded a file with edits 3 days
+                ago
+              </li>
+              <li style={{ marginTop: '20px' }}>
+                <strong>Steve Jobs</strong> uploaded a file with syntactical
+                edits 3 days ago
+              </li>
+              <li style={{ marginTop: '20px' }}>
+                <strong>Bill Gates</strong> uploaded a file with syntactical
+                edits 3 days ago
+              </li>
+              <li style={{ marginTop: '20px', paddingBottom: '15px' }}>
+                <strong>Bill Gates</strong> uploaded a file with parsing errors
+                3 days ago
+              </li>
+            </ul>
+          </div>
+          {/*<h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Not started
+          </span>
+
+          <p style={{ display: 'inline' }}>
+            No data has been uploaded yet. The filing period is open and
+            available to accept HMDA data. Make sure your data is in a
+            pipe-delimited text file.
+          </p>
+
+          <h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Errors
+          </span>
+
+          <p style={{ display: 'inline' }}>
+            Your data has formatting errors. Review these errors and update your
+            file. Then, upload the corrected file.
+          </p>
+
+          <h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Edits
+          </span>
+
+          <p style={{ display: 'inline' }}>
+            Your data has edits that need to be reviewed. Your file has been
+            uploaded, but the filing process may not proceed until edits are
+            verified or the file is corrected and re-uploaded.
+          </p>
+
+          <h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Edits
+          </span>
+
+          <p style={{ display: 'inline' }}>
+            Your data has edits that need to be reviewed. Your file has been
+            uploaded, but the filing process may not proceed until edits are
+            verified or the file is corrected and re-uploaded.
+          </p>
+
+          <h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Edits
+          </span>
+
+          <p style={{ display: 'inline' }}>
+            Your data has edits that need to be reviewed. Your file has been
+            uploaded, but the filing process may not proceed until edits are
+            verified or the file is corrected and re-uploaded.
+          </p>
+
+          <h3>Bank of Andrew - 1234567890</h3>
+          <span style={{ marginRight: '10px' }} className="usa-label">
+            Ready
+          </span>
+
+          <p style={{ display: 'inline' }}>
+            Your data is ready for submission. Your financial institution has
+            certified that the data is correct, but it has not been submitted
+            yet.
+          </p>*/}
 
           {this.props.institutions.fetched ? (
             <p className="multi-message">
